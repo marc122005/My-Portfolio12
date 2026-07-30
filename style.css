@@ -234,7 +234,17 @@ section{ padding:90px 0; border-bottom:1px solid var(--border); }
 .diffstat{ font-family:'JetBrains Mono', monospace; font-size:13px; white-space:nowrap; }
 .diffstat .plus{ color:var(--added); }
 .diffstat .minus{ color:var(--removed); }
-.project-desc{ color:var(--text-dim); font-size:14.5px; margin-top:14px; max-width:640px; }
+.project-desc{ color:var(--text-dim); font-size:14.5px; margin-top:14px; max-width:640px; line-height:1.7; }
+.project-desc .desc-full{ display:none; }
+.project-desc.expanded .desc-full{ display:inline; }
+.project-desc.expanded .desc-preview{ display:none; }
+.read-more-toggle{
+  font-family:'JetBrains Mono', monospace;
+  font-size:13px; color:var(--ice);
+  background:none; border:none; padding:0;
+  margin-left:0.4rem; cursor:pointer;
+}
+.read-more-toggle:hover{ text-decoration:underline; }
 .project-tags{ display:flex; gap:8px; flex-wrap:wrap; margin-top:18px; }
 .tag{
   font-family:'JetBrains Mono', monospace; font-size:11.5px;

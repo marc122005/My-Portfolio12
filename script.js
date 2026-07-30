@@ -74,3 +74,34 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
     }
   });
 });
+
+const projectDescriptions = document.querySelectorAll('.project-desc');
+projectDescriptions.forEach(desc => {
+  const fullText = desc.textContent.trim();
+  const maxChars = 140;
+  if(fullText.length <= maxChars) return;
+
+  const previewText = fullText.slice(0, maxChars).replace(/\s+\S*$/, '') + '…';
+
+  const previewSpan = document.createElement('span');
+  previewSpan.className = 'desc-preview';
+  previewSpan.textContent = previewText;
+
+  const fullSpan = document.createElement('span');
+  fullSpan.className = 'desc-full';
+  fullSpan.textContent = fullText;
+
+  const toggle = document.createElement('button');
+  toggle.type = 'button';
+  toggle.className = 'read-more-toggle';
+  toggle.textContent = 'Read more';
+  toggle.addEventListener('click', () => {
+    const expanded = desc.classList.toggle('expanded');
+    toggle.textContent = expanded ? 'Read less' : 'Read more';
+  });
+
+  desc.textContent = '';
+  desc.appendChild(previewSpan);
+  desc.appendChild(fullSpan);
+  desc.appendChild(toggle);
+});
