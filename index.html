@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marc Amgad — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="preloader">
+    <div class="preload-label mono">loading portfolio…</div>
+    <div class="preload-bar">
+      <div class="preload-fill" id="preloadFill"></div>
+    </div>
+    <div class="preload-pct mono" id="preloadPct">0%</div>
+  </div>
+
+  <header id="siteHeader">
+    <nav>
+      <div class="logo">Marc<span class="dot">.</span>Amgad</div>
+      <div class="navlinks">
+        <a href="#work">work</a>
+        <a href="#about">about</a>
+        <a href="#certificates">certificates</a>
+        <a href="#contact">contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-glow" id="heroGlow"></div>
+    <div class="wrap hero-inner">
+
+      <div class="eyebrow"><span class="live-dot"></span> available for work</div>
+
+      <div class="avatar-wrap">
+        <img src="img/my-photo.jpeg" alt="Photo of Marc Amgad">
+      </div>
+
+      <h1 class="hero-name">
+        <span class="word"><span style="animation-delay:.35s">Marc</span></span>
+        <span class="word"><span style="animation-delay:.42s">Amgad</span></span><br>
+        <span class="word role-word"><span style="animation-delay:.52s">Software</span></span>
+        <span class="word role-word"><span style="animation-delay:.59s">Engineer</span></span>
+      </h1>
+
+      <p class="hero-sub"> Frontend Developer | React Enthusiast | Computer Science Student
+        I build responsive and user-friendly web applications using HTML, CSS, JavaScript, Bootstrap, and React. I enjoy
+        solving problems, learning modern frontend technologies, and creating clean, accessible user interfaces.
+        Currently open to internship and entry-level frontend opportunities.</p>
+
+      <div class="hero-meta mono">
+        <div>📍 <span>Cairo, EG</span></div>
+        <div>✉ <span>marcamgad12@gmail.com</span></div>
+      </div>
+
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#work">View work</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-tag">work</div>
+        <h2>Recent projects</h2>
+      </div>
+
+      <div class="projects reveal-stagger">
+
+        <div class="project">
+          <div class="project-image">
+            <img src="./img/ninestars.png" alt="Ninestars project screenshot" loading="lazy">
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <div>
+                <div class="project-name">Ninestars</div>
+                <div class="project-branch"> master . </div>
+              </div>
+              <div class="diffstat"><span class="plus">+2,140</span> <span class="minus">-380</span></div>
+            </div>
+            <p class="project-desc">A real-time transaction ledger for a fintech platform, handling millions
+              of events per day with strict consistency guarantees and sub-100ms read latency.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">JavaScript</span><span class="tag">Bootstrap</span><span
+                class="tag">CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/marc122005/Ninestars/tree/master" target="_blank"
+                rel="noopener noreferrer">github.com/repo ↗</a>
+              <a href="https://marc122005.github.io/Ninestars/" target="_blank" rel="noopener noreferrer">View Demo
+                ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-image">
+            <img src="./img/coursera.png" alt="coursera-lite project screenshot" loading="lazy">
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <div>
+                <div class="project-name">Coursera-Lite</div>
+                <div class="project-branch">main · updated 2 hours ago</div>
+              </div>
+              <div class="diffstat"><span class="plus">+1,560</span> <span class="minus">-210</span></div>
+            </div>
+            <p class="project-desc">An observability dashboard that streams live metrics from microservices,
+              with anomaly detection and alerting built directly into the query layer.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">JavaScript</span><span class="tag">CSS</span><span
+                class="tag">Bootstrap</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/marc122005/Coursera">github.com/repo ↗</a>
+              <a href="https://marc122005.github.io/Coursera/" target="_blank" rel="noopener noreferrer">View Demo ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-image">
+            <img src="./img/final-project.png" alt="final project screenshot" loading="lazy">
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <div>
+                <div class="project-name">NFT Marketplaces</div>
+                <div class="project-branch">main · updated 2 months ago</div>
+              </div>
+              <div class="diffstat"><span class="plus">+890</span> <span class="minus">-95</span></div>
+            </div>
+            <p class="project-desc">is a simple website for managing and displaying NFTs.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">JavaScript</span><span class="tag">CSS</span><span
+                class="tag">Bootstrap</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/marc122005/NTF-Marketplace">github.com/repo ↗</a>
+              <a href="https://marc122005.github.io/NTF-Marketplace/" target="_blank" rel="noopener noreferrer">View
+                Demo ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-image">
+            <img src="./img/CRUDS.png" alt="CRUDS screenshot" loading="lazy">
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <div>
+                <div class="project-name">CRUDS system </div>
+                <div class="project-branch">main · updated 2 months ago</div>
+              </div>
+              <div class="diffstat"><span class="plus">+890</span> <span class="minus">-95</span></div>
+            </div>
+            <p class="project-desc">A simple CRUD (Create, Read, Update, Delete) system built with HTML, CSS, and JavaScript.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">JavaScript</span><span class="tag">CSS</span><span
+                class="tag">Bootstrap</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/marc122005/NTF-Marketplace">github.com/repo ↗</a>
+              <a href="https://marc122005.github.io/NTF-Marketplace/" target="_blank" rel="noopener noreferrer">View
+                Demo ↗</a>
+            </div>
+          </div>
+        </div>
+
+        
+
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-tag">about</div>
+        <h2>A little more context</h2>
+      </div>
+
+      <div class="about-grid reveal-stagger">
+        <div class="about-photo">
+          <img src="img/my-photo.jpeg" alt="Photo of Marc-Amgad">
+          <div class="caption mono">Marc-Amgad</div>
+        </div>
+
+        <div class="about-file">
+          <div class="filename">about</div>
+          <p>I'm a Computer Science student and frontend developer passionate about building responsive, user-friendly
+            web applications. I enjoy turning ideas into clean, interactive interfaces using HTML, CSS, JavaScript, and
+            React. I’m always learning modern frontend technologies, improving my problem-solving skills, and building
+            projects that strengthen my experience.
+
+            Based in Cairo, Egypt · Open to frontend internships and junior opportunities.</p>
+          <p>Based in <strong>Cairo, Egypt</strong> · open to remote roles and select freelance work.</p>
+        </div>
+
+        <div class="stack-grid">
+          <div class="stack-item"><span class="name">HTML</span><span class="ext">.html</span></div>
+          <div class="stack-item"><span class="name">CSS</span><span class="ext">.css</span></div>
+          <div class="stack-item"><span class="name">JavaScript</span><span class="ext">.js</span></div>
+          <div class="stack-item"><span class="name">React</span><span class="ext">.jsx</span></div>
+          <div class="stack-item"><span class="name">Python</span><span class="ext">.py</span></div>
+          <div class="stack-item"><span class="name">c++</span><span class="ext">.cpp</span></div>
+          <div class="stack-item"><span class="name">c#</span><span class="ext">.cs</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-tag">certificates</div>
+        <h2>Certificates</h2>
+      </div>
+
+      <div class="certificates-grid reveal-stagger">
+        <article class="certificate-card">
+          <img src="img/frontend.jpg" alt="Frontend development certificate">
+          <div class="certificate-body">
+            <h3>Frontend Development Basics</h3>
+            <p>Completed a structured course focused on HTML, CSS, JavaScript, and responsive design fundamentals.</p>
+          </div>
+        </article>
+
+        <article class="certificate-card">
+          <img src="img/frontend2.jpeg" alt="Web development certificate">
+          <div class="certificate-body">
+            <h3>Frontend Development</h3>
+            <p>Earned recognition for building modern, interactive pages and applying UI/UX best practices.</p>
+          </div>
+        </article>
+
+        <article class="certificate-card">
+          <img src="img/news-01.png" alt="Programming essentials certificate">
+          <div class="certificate-body">
+            <h3>Backend Development</h3>
+            <p>IS COMING SOON</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="contact-term reveal">
+        <div class="line1 mono">$ contact</div>
+        <h3>Let's build something reliable.</h3>
+        <div class="contact-links">
+          <a class="btn btn-primary" href="mailto:marcamgad12@gmail.com">marcamgad12@gmail.com</a>
+          <a class="btn btn-ghost" href="https://github.com/marc122005">github ↗</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/marc-amgad-7b23452b8">linkedin ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Marc-Amgad — built with too much coffee
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
