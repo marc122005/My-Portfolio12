@@ -63,7 +63,7 @@ nav{
 .navlinks a{
   position:relative;
   font-family:'JetBrains Mono', monospace;
-  font-size:13px; color:var(--text-dim);
+  font-size:13px; 
   transition:color .15s ease;
   padding-bottom:2px;
 }
@@ -73,7 +73,7 @@ nav{
 }
 .navlinks a:hover{ color:var(--amber); }
 .navlinks a:hover::after{ width:100%; }
-.navlinks a::before{ content:"~/"; color:var(--text-faint); }
+
 
 /* ---------- HERO ---------- */
 .hero{
@@ -187,7 +187,7 @@ section{ padding:90px 0; border-bottom:1px solid var(--border); }
   font-family:'JetBrains Mono', monospace; font-size:13px; color:var(--amber-dim);
   display:flex; align-items:center; gap:10px; margin-bottom:12px;
 }
-.section-tag::before{ content:"//"; color:var(--text-faint); }
+
 .section-head h2{ font-size:30px; font-weight:600; letter-spacing:-0.02em; }
 
 .reveal{ opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease; }
